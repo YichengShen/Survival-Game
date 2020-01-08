@@ -1,0 +1,24 @@
+<Ball>:
+    canvas:
+        Color:
+            rgb: (255, 69, 0)
+        Ellipse:
+            pos: self.center_x, self.center_y
+            size: 10, 10
+
+
+<Survival>:
+    ball: shiny_ball
+    star: one_star
+    planet: one_planet
+
+    Ball:
+        id: shiny_ball
+        center: self.parent.center
+    
+    Star:
+        id: one_star
+
+    Planet:
+        id: one_planet
+
